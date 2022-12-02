@@ -1,0 +1,39 @@
+/* Button */
+.button {
+    min-width: 170px;
+    display: inline-block;
+    background: var(--black);
+    padding: var(--gap-xl);
+    outline: none;
+    border: none;
+    transition: all var(--animation-timing-sm) ease-out;
+    cursor: pointer;
+    /* Font */
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+}
+.button:hover {
+    color: var(--white-full);
+    background: var(--black-alt);
+}
+.button.rounded {
+    border-radius: var(--gap-xxxl);
+}
+/* Input */
+.input {
+    padding: var(--gap);
+    border: 1px solid var(--gray);
+    background: var(--white-full);
+    /* Font */
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+.input.rounded {
+    border-radius: var(--gap-xl);
+}

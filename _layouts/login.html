@@ -1,0 +1,29 @@
+---
+type: login
+---
+
+{% include head.html %}
+{% include header.html %}
+{% include sidebar.html %}
+<section class="login grid center fullscreen">
+    <form action="" class="">
+        <h2>Acceso clientes</h2>
+        <input type="text" id="email" placeholder="E-mail (requerido)" class="input rounded" />
+        <input type="password" id="password" placeholder="Contraseña (requerido)" class="input rounded noMargin" />
+        <div class="help grid-2">
+            <p class="required removeMobile">(*) campos requeridos</p>
+            <p>
+                <a href="">¿Olvidaste tu contraseña?</a>
+            </p>
+        </div>
+        <a href="" class="button rounded">Ingresar</a>
+        <p>
+            <a href="{{ site.baseurl }}/signup" class="signup">
+                ¿No tenés tu cuenta todavía? ¡Registrate ahora!
+            </a>
+        </p>
+    </form>
+</section>
+{% include footer.html %}
+
+<script src="../assets/js/containerCtrl.js"></script>

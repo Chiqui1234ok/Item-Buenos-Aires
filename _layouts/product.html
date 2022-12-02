@@ -1,0 +1,61 @@
+---
+type: product
+---
+
+{% include head.html %}
+{% include header.html %}
+{% include sidebar.html %}
+<section class="product container grid-2 gap">
+    <div class="image"></div>
+    <section class="details">
+        <h2>Test 01</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="right">En stock</p>
+
+        <hr>
+
+        <!-- Table -->
+        <ul class="colors group minimal table gap">
+            <!-- Header -->
+            <h3>Colores</h3>
+            <h4>S</h4>
+            <h4>M</h4>
+            <h4>L</h4>
+            <h4>XL</h4>
+            <!-- Color red -->
+            <li class="color red"></li>
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+            <!-- Color olive -->
+            <li class="color olive"></li>
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+            <!-- Color green2 -->
+            <li class="color green2"></li>
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+            <input type="number" class="input" />
+        </ul>
+        
+        <a class="button rounded">Agregar al carrito</a>
+        
+        <hr class="removeMobile">
+
+        <ul class="grid-4 minimal inline thumbnails removeMobile">
+            <li>img 2</li>
+            <li>img 3</li>
+            <li>img 4</li>
+            <li>img 5</li>
+            <li>img 6</li>
+            <li>img 7</li>
+        </ul>
+    </section>
+</section>
+{% include footer.html %}
+
+<script src="../assets/js/containerCtrl.js"></script>

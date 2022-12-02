@@ -1,0 +1,208 @@
+* {
+    /* Fonts */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    /* Basics */
+    box-sizing: border-box;
+    /* Scrollbar settings */
+    scroll-behavior: smooth;
+}
+/* Colors */
+:root {
+    --gray: rgb(184, 184, 184);
+    --gray-alt: rgb(209, 209, 209);
+    --black: #212121;
+    --black-alt: #3d3d3d;
+    --brown: rgb(88, 46, 68);
+    --blue: rgb(0, 113, 163);
+    --blue-alt: rgb(24, 124, 182);
+    --yellow: rgb(252, 226, 5);
+    --yellow-alt: rgb(253, 210, 15);
+    --green: rgb(58, 211, 83);
+    --green-alt: rgb(22, 197, 101);
+    --green2: rgb(229, 255, 31);
+    --olive: rgb(68, 132, 121);
+    --red: rgb(229, 19, 67);
+    --red-alt: rgb(245, 35, 84);
+    --pink: rgb(237, 117, 209);
+    --skyblue: rgb(94, 199, 232);
+    --skyblue-alt: rgb(123, 224, 255);
+    --white: rgb(250, 250, 250);
+    --white-alt: rgb(218, 218, 218);
+    --white-transparent: rgba(255, 255, 255, .8);
+    --white-transparent-alt: rgba(255, 255, 255, .6);
+    --white-full: rgb(255, 255, 255);
+    /* shadow */
+    --shadow: rgba(0, 0, 0, .4);
+    --shadow-alt: rgba(0, 0, 0, .2);
+    /*  */
+    --gap-xxxxl: 30px;
+    --gap-xxxl: 25px;
+    --gap-xxl: 20px;
+    --gap-xl: 15px;
+    --gap: 10px;
+    --gap-sm: 5px;
+    /*  */
+    --animation-timing-xl: 1s;
+    --animation-timing: .5s;
+    --animation-timing-sm: .25s;
+}
+@media(min-width: 1024px) {
+    :root {
+        --gap-xxxxl: 50px;
+    }
+}
+@media(min-width: 1280px) {
+    :root {
+        --gap-xxxxl: 70px;
+    }
+}
+/* Body */
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: var(--white-full);
+}
+/* Containers */
+.container {
+    width: 90%;
+    margin: 144px auto var(--gap-xxxl) auto;
+    /* Height fix (child floating elements) */
+    display: table;
+}
+.container.noDisclaimer {
+    margin-top: 80px;
+}
+@media(min-width: 420px) {
+    .container {
+        width: 380px;
+    }
+}
+@media(min-width: 720px) {
+    .container {
+        width: 90%;
+    }
+}
+@media(min-width: 1280px) {
+    .container {
+        width: 70%;
+    }
+}
+/* @media(min-width: 1440px) {
+    .container {
+        width: 70%;
+    }
+} */
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    float: left;
+    content: "";
+    clear: both;
+}
+.fullscreen.animated {
+    background: linear-gradient(-45deg, var(--skyblue), var(--skyblue-alt), var(--violet), var(--violet-alt));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* Custom defaults */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+article h1, article h2, article h3, article h4, article h5, article h6 {
+    margin: var(--gap) 0 var(--gap) 0;
+}
+/* Paragraph */
+p {
+    /* Font */
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-weight: 300;
+}
+strong {
+    font-weight: bolder;
+}
+p.right { text-align: right }
+/* Links */
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--skyblue);
+}
+a:hover {
+    color: var(--skyblue-alt);
+}
+a.fullscreen {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* Lists */
+ul.minimal {
+    clear: both;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.minimal li {
+    line-height: 32px;
+}
+ul.inline li {
+    float: left;
+}
+ul.inline li {
+    margin-right: var(--gap-xl);
+}
+ul.inline li:last-child {
+    margin-right: 0;
+}
+/* CSS.GG fix */
+[class*=gg] {
+    display: inline-block;
+}
+/* Text */
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.required {
+    color: var(--red);
+}
+/* Margin */
+.noMargin { margin: 0 !important }
+/* Responsive */
+.removeMobile, .removeMobile-xl {
+    display: none !important;
+}
+.removeDesktop, .removeDesktop-xl {
+    display: block !important;
+}
+@media(min-width: 1024px) {
+    .removeMobile { display: block !important }
+    .removeDesktop { display: none !important }
+}
+@media(min-width: 1280px) {
+    .removeMobile-xl { display: block !important }
+    .removeDesktop-xl { display: none !important }
+}

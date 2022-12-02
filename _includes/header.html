@@ -1,0 +1,52 @@
+<header id="header" class="grid-3 center">
+    {% if layout.wholesaler %}
+        <div class="disclaimer span grid-2" id="disclaimer">
+            <span class="shipmentPolicy">Envíos a todo el país</span>
+            <span class="minimumOrder">Compra mínima $80.000</span>
+        </div>
+    {% endif %}
+    <!-- Navegación principal -->
+    <nav class="primary removeMobile-xl">
+        <ul class="minimal inline">
+            <li>
+                <a href="{{ site.baseurl }}/collection">New arrivals</a>
+            </li>
+            <li>
+                <a href="{{ site.baseurl }}/collection">Collection</a>
+            </li>
+            <li>
+                <a href="{{ site.baseurl }}/club-item">Club Item</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Logo centrado -->
+    <div class="logo">
+        <a href="/"></a>
+    </div>
+    <!-- Navegación secundaria -->
+    <nav class="secondary">
+        <ul class="minimal inline grid-3">
+            <li>
+                <a href="{{ site.baseurl }}/cart">🛒</a>
+            </li>
+            <li>
+                <a href="{{ site.baseurl }}/login">👨</a>
+            </li>
+            <!-- Hamburguer menu 🍔 -->
+            <div class="menu removeDesktop-xl">
+                <a class="row cf" onclick="toggleSidebar()">
+                    <div class="three col">
+                        <div id="hamburger" class="hamburger" style="padding-top: 5px">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+<script src="../assets/js/headerCtrl.js"></script>
+<!-- Dependency for header & sidebar 👇 -->
+<script src="../assets/js/checkIfClassExists.js"></script>

@@ -1,0 +1,38 @@
+---
+type: productShowcase
+wholesaler: true
+---
+
+{% include head.html %}
+{% include header.html %}
+{% include sidebar.html %}
+
+{% if wholesaler == true %}
+<section class="container wholesaler productShowcase">
+{% else %}
+<section class="container productShowcase">
+{% endif %}
+    <h2 class="center">Nombre de la categoría</h2>
+    <ul class="cards group grid-6 gap-xxl">
+        {% include partials/card.html name="Test 01" image="1.jpg" %}
+
+        {% include partials/card.html name="Test 02" image="2.jpg" %}
+
+        {% include partials/card.html name="Test 03" image="3.jpg" %}
+
+        {% include partials/card.html name="Test 04" image="4.jpg" %}
+
+        {% include partials/card.html name="Test 05" image="5.jpg" %}
+
+        {% include partials/card.html name="Test 06" image="6.jpg" %}
+
+        {% include partials/card.html name="Test 07" image="7.jpg" %}
+
+        {% include partials/card.html name="Test 08" image="8.jpg" %}
+
+        {% include partials/card.html name="Test 09" image="9.jpg" %}
+    </ul>
+</section>
+{% include footer.html %}
+
+<script src="../assets/js/containerCtrl.js"></script>

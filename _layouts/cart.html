@@ -1,0 +1,52 @@
+---
+type: cart
+---
+
+{% include head.html %}
+{% include header.html %}
+{% include sidebar.html %}
+<section class="cart container">
+    <h2 class="button">
+        Mi pedido
+    </h2>
+    <ul class="minimal user cart">
+        <li class="item">
+            <div class="img"></div>
+            <div class="details">
+                <h3>Test 001</h3>
+                <p>
+                    Color
+                    <ul class="minimal colors group">
+                        <li class="color red"></li>
+                    </ul>
+                </p>
+                <p>
+                    Cantidad <strong>2</strong>
+                </p>
+            </div>
+        </li>
+        <!--  -->
+        <li class="item">
+            <div class="img"></div>
+            <div class="details">
+                <h3>Test 002</h3>
+                <p>
+                    Color
+                    <ul class="minimal colors group">
+                        <li class="color olive"></li>
+                    </ul>
+                </p>
+                <p>
+                    Cantidad <strong>4</strong>
+                </p>
+            </div>
+        </li>
+    </ul>
+    <div class="footer grid center">
+        <h4>Subtotal: $10.000</h4>
+        <a href="" class="button rounded">Pagar</a>
+    </div>
+</section>
+{% include footer.html %}
+
+<script src="../assets/js/containerCtrl.js"></script>

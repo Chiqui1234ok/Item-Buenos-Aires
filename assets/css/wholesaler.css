@@ -1,0 +1,57 @@
+.wholesaler.video, .retail.video {
+    background: var(--skyblue-alt);
+    margin-top: 139px;
+}
+.wholesaler.viewMore, .retail.viewMore {
+    padding: 60px var(--gap-xxl) var(--gap-xxl) var(--gap-xxl);
+    clear: both;
+    background: var(--white-full) url('../img/wholesaler/newArrivals.jpg') -316px / cover no-repeat fixed;
+}
+.wholesaler.viewMore .group, .retail.viewMore .group {
+    width: 203px;
+    float: right;
+    text-align: right;
+}
+.wholesaler.viewMore .group h2, .wholesaler.viewMore .group h3, .retail.viewMore .group h2, .retail.viewMore .group h3 {
+    color: var(--black);
+    text-shadow: 0 0 3px var(--white-full);
+    margin: 0;
+}
+.wholesaler.viewMore .group h3, .retail.viewMore .group h3 {
+    font-weight: 500;
+}
+.wholesaler.viewMore .group .button, .retail.viewMore .group .button {
+    width: 150px;
+    padding: 15px;
+    margin-top: var(--gap-xxxl);
+    float: right;
+    background: var(--shadow-alt);
+    color: var(--black);
+    border-radius: 0;
+}
+@media(min-width: 768px) {
+    .wholesaler.video, .retail.video {
+        margin-top: 107px;
+    }
+    .wholesaler.viewMore, .retail.viewMore {
+        background-position-x: 0;
+    }
+    .wholesaler.viewMore .group, .retail.viewMore .group {
+        width: 252px;
+        text-align: left;
+    }
+    .wholesaler.viewMore .group h2 {
+        font-size: 30px;
+    }
+    .wholesaler.viewMore .group h3 {
+        font-size: 22px;
+    }
+}
+@media(min-width: 1024px) {
+    .wholesaler.viewMore {
+        padding: 100px 100px 0 0;
+    }
+    .wholesaler.viewMore .group, .retail.viewMore .group {
+        width: 255px;
+    }
+}

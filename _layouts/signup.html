@@ -1,0 +1,66 @@
+---
+type: signup
+---
+
+{% include head.html %}
+{% include header.html %}
+{% include sidebar.html %}
+<section class="signup container">
+    <form action="" class="">
+        <h2>
+            Nueva cuenta <span class="removeMobile">cliente</span>
+        </h2>
+
+        <div class="group login">
+            <h3>
+                <span class="removeMobile">Información de </span>acceso
+            </h3>
+            <div class="body">
+                <input type="text" id="email" placeholder="E-mail (requerido)" class="input rounded" />
+
+                <input type="password" id="password" placeholder="Contraseña (requerido)" class="input rounded" />
+            </div>
+        </div>
+
+        <div class="group billing">
+            <h3>
+                <span class="removeMobile">Información de </span>facturación
+            </h3>
+            <div class="body">
+                <input type="text" id="name" placeholder="Nombre (opcional)" class="input rounded" />
+
+                <input type="text" id="surname" placeholder="Apellido (opcional)" class="input rounded" />
+
+                <input type="number" id="dni" placeholder="Nro. de DNI (opcional)" class="input rounded" />
+
+                <input type="number" id="cuit" placeholder="CUIT (opcional)" class="input rounded" />
+            </div>
+        </div>
+
+        <div class="group shipment">
+            <h3>
+                <span class="removeMobile">Información de </span>envío
+            </h3>
+            <div class="body">
+                <input type="text" id="address" placeholder="Calle y altura (opcional)" class="input rounded" />
+
+                <input type="text" id="city" placeholder="Ciudad (opcional)" class="input rounded" />
+
+                <input type="text" id="country" placeholder="País (opcional)" class="input rounded" />
+
+                <input type="text" id="showroom" placeholder="Nombre de local/showroom (opcional)" class="input rounded" />
+            </div>
+        </div>
+
+        <div class="footer">
+            <label for="newsletter" class="newsletter">Suscribirme al newsletter mensual</label>
+            <input type="checkbox" id="newsletter" class="newsletter">
+
+            <a href="#" class="button rounded">Registrarme</a>
+        </div>
+
+    </form>
+</section>
+{% include footer.html %}
+
+<script src="../assets/js/containerCtrl.js"></script>

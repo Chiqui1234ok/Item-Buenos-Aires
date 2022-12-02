@@ -1,0 +1,61 @@
+/* Setup of basic rules & shape of 'color' element */
+ul.colors.group li.color {
+    width: 38px;
+    height: 38px;
+    background: var(--white);
+    border-radius: 100%;
+    float: left;
+    margin: 0 var(--gap) var(--gap) 0;
+    transition: border-radius var(--animation-timing-sm) ease-out;
+}
+/* Last child behaviour */
+ul.colors.group li.color:last-child {
+    margin: 0;
+}
+/* Hover/Active behaviour */
+ul.colors.group li.color:hover, ul.colors.group li.color.active {
+    border-radius: var(--gap);
+}
+/* Colors setup */
+ul.colors.group li.color.gray {
+    background: var(--gray);
+}
+ul.colors.group li.color.black {
+    background: var(--black);
+}
+ul.colors.group li.color.brown {
+    background: var(--brown);
+}
+ul.colors.group li.color.blue {
+    background: var(--blue);
+}
+ul.colors.group li.color.yellow {
+    background: var(--yellow);
+}
+ul.colors.group li.color.green {
+    background: var(--green);
+}
+ul.colors.group li.color.green2 {
+    background: var(--green2);
+}
+ul.colors.group li.color.olive {
+    background: var(--olive);
+}
+ul.colors.group li.color.red {
+    background: var(--red);
+}
+ul.colors.group li.color.pink {
+    background: var(--pink);
+}
+ul.colors.group li.color.skyblue {
+    background: var(--skyblue);
+}
+ul.colors.group li.color.white {
+    background: var(--white-full);
+}
+@media(min-width: 1440px) {
+    ul.colors.group li.color {
+        width: 44px;
+        height: 44px;
+    }
+}

@@ -1,0 +1,100 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all var(--animation-timing-sm) ease-out;
+    z-index: 10;
+    /*  */
+    background: var(--white-transparent);
+    backdrop-filter: blur(2px);
+}
+header.grid-3 {
+    grid-template-columns: 122px auto;
+}
+header.open {
+    background: var(--white);
+}
+header.inactive {
+    margin-top: -60px;
+}
+header .disclaimer {
+    padding: var(--gap);
+    background: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    transition: margin-top var(--animation-timing-sm) ease-out;
+}
+header .disclaimer.span {
+    grid-column: 1 / span 2;
+}
+header .disclaimer.inactive {
+    margin-top: -74px;
+}
+header nav.primary {
+    text-transform: uppercase;
+}
+/* General logo */
+.logo {
+    width: 98px;
+    height: 40px;
+    background: url('../img/logo.png') center / contain;
+}
+.logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* Specific CSS for header */
+header .logo {
+    margin: var(--gap) auto;
+}
+/* Nav */
+header nav.secondary ul.grid-3 {
+    grid-template-columns: 50px 50px 65px;
+    width: 150px;
+    float: right;
+    margin: 0 var(--gap-xxl) 0 0;
+}
+header nav ul li {
+    margin-right: 0 !important;
+}
+header nav ul li a {
+    color: var(--black);
+    font-size: 22px;
+    padding: var(--gap);
+    display: block;
+}
+@media(min-width: 768px) {
+    header .disclaimer {
+        font-size: 22px;
+    }
+    header .disclaimer.grid-2 .shipmentPolicy {
+        text-align: right;
+        padding-right: 15px;
+    }
+    header .disclaimer.grid-2 .minimumOrder {
+        text-align: left;
+        padding-left: 15px;
+        border-left: 2px solid var(--white);
+    }
+}
+@media(min-width: 1280px) {
+    header.inactive {
+        margin-top: 0;
+    }
+    header nav.secondary ul.grid-3 {
+        width: 100px;
+        grid-template-columns: 50px 50px;
+    }
+}
+@media(min-width: 1280px) {
+    header.grid-3 {
+        grid-template-columns: 550px auto 550px;
+    }
+    header .disclaimer.span {
+        grid-column: 1 / span 3;
+    }
+}

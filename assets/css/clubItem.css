@@ -1,0 +1,4 @@
+section.clubItem .qr .group .button {
+    width: 200px;
+    margin: var(--gap-xl) auto var(--gap-xl) auto;
+}
