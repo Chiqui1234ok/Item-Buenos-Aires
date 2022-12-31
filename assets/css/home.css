@@ -2,11 +2,7 @@ section.home {
     margin: 0 !important;
 }
 section.home .wholesaler {
-    background: url('../img/home/mayorista.jpg') top center / 100%;
-    transition: background-size 10s ease-out;
-}
-section.home .wholesaler:hover {
-    background-size: 105%;    
+    background: url('../img/home/mayorista.jpg') top center / cover;
 }
 section.home .wholesaler h2 {
     position: absolute;
@@ -25,11 +21,7 @@ section.home .retail h2 strong {
     float: right;
 }
 section.home .retail {
-    background: url('../img/home/minorista.jpg') top center / 100%;
-    transition: background-size 10s ease-out;
-}
-section.home .retail:hover {
-    background-size: 105%;    
+    background: url('../img/home/minorista.jpg') top center / cover;
 }
 section.home .retail h2 {
     position: absolute;
@@ -54,4 +46,20 @@ section.home .logo {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+@media(min-width: 1280px) and (orientation: landscape) and (hover: hover) {
+    section.home .wholesaler {
+        background-size: 100%;
+        transition: background-size 10s ease-out;
+    }
+    section.home .wholesaler:hover {
+        background-size: 105%;    
+    }
+    section.home .retail {
+        background-size: 100%;
+        transition: background-size 10s ease-out;
+    }
+    section.home .retail:hover {
+        background-size: 105%;    
+    }
 }
